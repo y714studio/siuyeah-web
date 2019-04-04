@@ -12,7 +12,6 @@
   export default {
     mounted() {
       let data = {}
-
       this.$axios.get('/api/isopenning', data)
       .then((response)=> {
         alert("Current time: "+response.data.currentTime+'\nIs website open? '+ response.data.status)
