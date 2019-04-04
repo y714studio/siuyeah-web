@@ -1,3 +1,4 @@
+require('dotenv').config()
 import pkg from './package'
 
 export default {
@@ -24,6 +25,10 @@ export default {
 
   router: {
     middleware: ['check-time']
+  },
+
+  env: {
+    base_url: process.env.BASE_URL || 'https://localhost:3000'
   },
 
   /*
