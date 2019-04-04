@@ -7,13 +7,13 @@ app.get('/isopenning', (req, res) => {
 
   if(currrentTime > 22 || currrentTime < 6) {
     return res.send({
-      currrentTime: currrentTime,
+      currentTime: currrentTime,
       status: "success",
       code: 0
     })
   } else {
     return res.send({
-      currrentTime: currrentTime,
+      currentTime: currrentTime,
       status: "fail",
       code: 1
     })
