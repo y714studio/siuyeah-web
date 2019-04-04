@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "siuyeah-web",
+  "scripts": {
+    "postdeploy": "yarn"
+  },
+  "stack": "heroku-18"
+}
