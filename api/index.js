@@ -7,7 +7,8 @@ app.get('/isopenning', (req, res) => {
 
   if(currrentTime > 22 || currrentTime < 6) {
     return res.send({
-      currentTime: currrentTime,
+      currentTime: (new Date()).getHours(),
+      utcTime: (new Date()).toUTCString,
       status: "success",
       code: 0
     })
