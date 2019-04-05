@@ -6,7 +6,7 @@ export default function ({ req, res, redirect }) {
 
   return axios.get(process.env.base_url + '/api/isopenning').then(res=> {
     console.log(res)
-    if(response.data.status=='fail') {
+    if(res.data.status=='fail') {
       return redirect('/close')
     }
   })
