@@ -11,7 +11,7 @@
 <script>
   export default {
     mounted() {
-      alert("Open")
+      alert((new Date()).toUTCString())
     }
   }
 </script>
