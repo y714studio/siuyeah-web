@@ -3,7 +3,7 @@ const app = require('express')()
 module.exports = { path: '/api', handler: app }
 
 app.get('/isopenning', (req, res) => {
-  let currrentTime = (Date( (new Date()).toUTCString() )).getHours()
+  let currrentTime = (new Date( (new Date()).toUTCString() )).getHours()
 
   if(currrentTime > 22 || currrentTime < 6) {
     return res.send({
